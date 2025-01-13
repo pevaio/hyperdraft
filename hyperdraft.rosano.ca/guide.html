@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from hyperdraft.rosano.ca/guide by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Jan 2025 00:53:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>Hyperdraft Guide</title>
+	<meta name="description" content="Documentation for project" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="theme-color" content="#000000" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="canonical" href="guide.html" />
+	<meta property="og:image" content="../static.rosano.ca/wikiavec/touch.png" />
+	<link rel="apple-touch-icon" href="../static.rosano.ca/wikiavec/touch.png" />
+	<link rel="icon" href="../static.rosano.ca/wikiavec/touch.png" type="image/png" />
+	<link rel="stylesheet" type="text/css" href="_shared/__external/normalize.css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="_shared/__external/OLSKDecor/ui-style.css">
+	<link rel="stylesheet" type="text/css" href="_shared/common/ui-style.css">
+	<link rel="stylesheet" type="text/css" href="open-guide/ui-style.css">
+	<script defer src="../olsk.rosano.ca/OLSKFigures/master/main.js"></script>
+	<script src="../olsk.rosano.ca/OLSKBanner/master/main.js"></script>
+	<link rel="alternate" type="application/rss+xml" href="https://utopia.rosano.ca/feed" title="Updates">
+</head>
+
+<body>
+
+
+
+<div class="KVCGuide OLSKDecor OLSKDecorCapped">
+
+<div class="KVCGuideCrown OLSKCommonCard OLSKCommonCrownCard">
+	<section>
+		<span class="KVCGuideCrownName">Hyperdraft Guide</span>
+	</section>
+</div>
+
+<div class="KVCGuideContent">
+<div class="OLSKDecorNotice">
+
+<p>This document is a work-in-progress. Feel free to reach out on <a href="https://rosano.ca/mastodon">Mastodon</a> or <a href="https://rosano.ca/twitter">Twitter</a>.</p>
+</div>
+
+<p>Hyperdraft helps you organize your thinking with text notes, and makes it simple to turn them into a website.</p>
+<p>Inspired by modeless and keyboard-centric <a href="http://notational.net/">Notational Velocity</a> it lets you quickly and easily network your ideas via a simple <em>double-bracket syntax</em>.</p>
+<p>Use it for ideas, todo lists, brainstorming, recipes, reading notes, journaling, or anything involving writing.</p>
+<h1 id="item-catalog">Item catalog</h1>
+<p>This is the first and only screen of the app.</p>
+<p>On the left side of the interface, you can create, search, and select notes. On the right side, you can edit, archive, publish, and delete.</p>
+<p>If you&#39;re on a mobile device, clicking an item in the list (left), shows you the details (right).</p>
+<div class="OLSKDecorNotice">
+
+<p>Editing the same note on multiple devices at the same time can result in data loss. Editing different notes does note have this issue.</p>
+</div>
+
+<h2 id="the-focus">The focus</h2>
+<p>Keyboard shortcuts are based on whether the list or the editor have <em>the focus</em>.</p>
+<p>If the list has <em>the focus</em>, the selected note will highlighted in blue and the search box will have a blue border.</p>
+<p>If the editor has <em>the focus</em>, the selected note will be highlighted in grey, the search box will have no border, and the editor will show a blinking cursor.</p>
+<p>Try alternating between the two with the <code>Tab</code> key.</p>
+<h2 id="notes-list">Notes list</h2>
+<p>All your notes are listed here. Type text in the search box to filter notes that match the exact text. Click a note to select it and focus the editor.</p>
+<h2 id="editor">Editor</h2>
+<p>This is a <em>plaintext</em> editor, which means there is no formatting, no images, no special magic – literally just plain simple text. What you type is exactly what is saved, and there is nothing there that you cannot see.</p>
+<h1 id="writing">Writing</h1>
+<h2 id="the-only-important-thing-you-might-need-to-learn">The only important thing you might need to learn</h2>
+<p>Hyperdraft uses the <em>double-bracket syntax</em>, which is a popular way to link between notes. It&#39;s very simple after you use it for the first time: if you have a note called <em>apples are crunchy</em>, you can link to it from another note by enclosing the text &quot;apples are crunchy&quot; in double-brackets, like this <code>[[apples are crunchy]]</code>.</p>
+<p>That&#39;s really the only thing that might be new or special about this editor. Learning this tiny syntax allows you to click through the links between your notes as well as make pages on a website that link to each other.</p>
+<h2 id="markdown">Markdown</h2>
+<p>You can specify structure and formatting with Markdown, which is a set of symbols that signify things like headings, bold text, links. It is designed to be readable in this kind of <em>plaintext</em> editor.</p>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th>Syntax</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">bold</td>
+<td><code>**alfa**</code></td>
+<td><strong>alfa</strong></td>
+</tr>
+<tr>
+<td align="left">italics</td>
+<td><code>*bravo*</code></td>
+<td><em>bravo</em></td>
+</tr>
+<tr>
+<td align="left">heading</td>
+<td><code># charlie</code></td>
+<td><h1>charlie</h1></td>
+</tr>
+<tr>
+<td align="left">quote</td>
+<td><code>&gt; delta</code></td>
+<td><blockquote>delta</blockquote></td>
+</tr>
+<tr>
+<td align="left">list</td>
+<td><code>- echo</code></td>
+<td><ul><li>echo</li></ul></td>
+</tr>
+<tr>
+<td align="left">horizontal rule</td>
+<td><code>* * *</code></td>
+<td><hr /></td>
+</tr>
+</tbody></table>
+<p>See the <a href="https://www.markdownguide.org/basic-syntax/">Markdown Guide</a> for more examples.</p>
+<h2 id="headings">Headings</h2>
+<p>When navigating large documents, it&#39;s useful to be able to quickly jump between sections. Press the <em>Jump</em> button or use the shortcut <code>AccessKey+j</code> to bring up a list of headings. You can use the <code>Up</code> or <code>Down</code> key to move between sections, or filter by typing text. Click the heading to close the list, or press <code>Enter</code>.</p>
+<h2 id="links">Links</h2>
+<p>There are a few different ways to link:</p>
+<ul>
+<li><code>[[apples are crunchy]]</code> internal link</li>
+<li><code>[crunchy fruits](apples are crunchy)</code> internal link with alternate text</li>
+<li><code>[essay about fruits](https://example.com)</code> external link</li>
+</ul>
+<p>Notice how they all start with a square bracket.</p>
+<h1 id="publishing">Publishing</h1>
+<p>Connect your <em>cloud</em> to make notes accessible to the public Internet. Simply press the <code>Publish</code> button and a shareable link will appear. In the same location, press the <code>Retract</code> button to remove public access.</p>
+<h2 id="custom-domain-name">Custom domain name</h2>
+<p>By default, the public link may have a long format like</p>
+<blockquote>
+<p>https://[ your provider&#39;s domain name ]/[ your user name ]/public/wikiavec/[ the note&#39;s public ID ]</p>
+</blockquote>
+<p>Using a custom domain name requires <em>hosting</em>, which means another site will fetch from the public link above and then show the content. You can use a paid service such as <a href="https://hmm.garden/">Garden</a> (no technical knowledge required) or <a href="https://github.com/rosano/flowerpot">host it yourself</a>.</p>
+<p>There are three steps to the configuring a custom domain:</p>
+<ol>
+<li>Run the <code>Configure custom domain name</code> command. (See the <a href="guide/index.html#shortcuts">Shortcuts</a> for more info)</li>
+<li>You should see a <em>root URL</em> that looks like the one above. Copy it and put it into your <em>hosting</em>.</li>
+<li>Enter your domain name.</li>
+</ol>
+<p>Your public links should now have a format like</p>
+<blockquote>
+<p>https://[ your domain name ]/[ the note&#39;s public ID ]</p>
+</blockquote>
+<h3 id="home-page">Home page</h3>
+<p>After setting up a custom domain, designate any note as the home page with the <code>Set as homepage</code> command.</p>
+<h1 id="shortcuts">Shortcuts</h1>
+<div class="OLSKDecorNotice">
+
+<p><em>AccessKey</em> refers to a one or more shortcut keys followed by a single character. Usually it&#39;s <code>Alt</code> on Windows or <code>Control+Alt</code> on macOS, but it changes <a href="https://www.w3schools.com/tags/att_global_accesskey.asp#table2">based on your browser and operating system</a>.</p>
+<p><em>Launcher</em> refers to the app&#39;s command runner: press <code>Alt+Space</code>, type the command, then press <code>Enter</code> to run.</p>
+</div>
+
+<table>
+<thead>
+<tr>
+<th align="left">Item catalog</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Create</td>
+<td><code>AccessKey+n</code></td>
+</tr>
+<tr>
+<td align="left">Select previous or next item, if filter field is focused</td>
+<td><code>Up</code> or <code>Down</code></td>
+</tr>
+<tr>
+<td align="left">Create item from filter text, if filter field is focused</td>
+<td><code>Enter</code></td>
+</tr>
+<tr>
+<td align="left">Clear filter text and selected item, focus filter field</td>
+<td><code>Escape</code></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="left">Editor</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>Archive</code></td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left"><code>Unarchive</code></td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left"><code>Clone</code></td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left"><code>Show local versions</code></td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left"><code>Export note</code></td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left"><code>Debug note</code></td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left">Jump</td>
+<td><code>AccessKey+j</code></td>
+</tr>
+<tr>
+<td align="left">Select previous or next note, if filter field is focused</td>
+<td><code>Up</code> or <code>Down</code></td>
+</tr>
+<tr>
+<td align="left">Clear filter text and selected note, focus filter field</td>
+<td><code>Escape</code></td>
+</tr>
+<tr>
+<td align="left">Open link under cursor</td>
+<td><code>Cmd+Enter</code> or <code>Ctrl+Enter</code></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="left">Editor (while cloud connected)</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>Publish</code> (if not public)</td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left"><code>Open public link</code> (if public)</td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left"><code>Set as homepage</code> (if public)</td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left"><code>Retract</code> (if public)</td>
+<td>Launcher</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="left">Global</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Alternate <em>the focus</em> between the Notes list and the editor</td>
+<td><code>Tab</code></td>
+</tr>
+<tr>
+<td align="left"><code>Journal</code></td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left"><code>Backlinks</code></td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left"><code>Show public notes</code></td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left"><code>Reveal archive</code></td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left"><code>Open access link</code></td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left"><code>Reload</code></td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left"><code>Force update</code></td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left">Launcher</td>
+<td><code>Alt+Space</code></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="left">Global (import/export)</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>Import JSON (beta)</code></td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left"><code>Import TXT (beta)</code></td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left"><code>Import Notational Velocity (beta)</code></td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left"><code>Export JSON (beta)</code></td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left"><code>Export ZIP (beta)</code></td>
+<td>Launcher</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="left">Global (while cloud connected)</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>Publish all previously published notes</code></td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left"><code>Retract all public notes</code></td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left"><code>Configure custom domain name</code></td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left"><code>Remove custom domain name</code></td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left"><code>Configure custom template</code></td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left"><code>Remove custom template</code></td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left"><code>Copy private access link</code></td>
+<td>Launcher</td>
+</tr>
+<tr>
+<td align="left"><code>Flush data</code></td>
+<td>Launcher</td>
+</tr>
+</tbody></table>
+<h1 id="add-to-home-screen-on-mobile-and-tablet-devices">Add to Home screen on mobile and tablet devices</h1>
+<p>This web app can be &#39;installed&#39; and used as if it were a native mobile app (with an icon, working without internet access, running as a standalone app outside of the browser).</p>
+<ol>
+<li><a href="write.html">Open the app</a> in your browser, then follow the steps based on your operating system:</li>
+</ol>
+<h2 id="ios--safari">iOS + Safari</h2>
+<ol start="2">
+<li>Tap the Share button <img height="22" valign="middle" alt="Share button icon" src="_shared/__external/OLSKUIAssets/_OLSKSharediOSShare.svg" /></li>
+<li>Tap <em>Add to Home Screen</em> <img height="22" valign="middle" alt="Add to Home Screen icon" src="_shared/__external/OLSKUIAssets/_OLSKSharediOSA2HS.svg"></li>
+</ol>
+<h2 id="android--chrome">Android + Chrome</h2>
+<ol start="2">
+<li>Tap the More button <img height="22" valign="middle" alt="More button icon" src="_shared/__external/OLSKUIAssets/_OLSKSharedAndroidMore.svg" /></li>
+<li>Tap <em>Add to home screen</em></li>
+</ol>
+<h1 id="what-are-remotestorage-and-fission">What are remoteStorage and Fission?</h1>
+<p><a href="https://remotestorage.io/">remoteStorage</a> and <a href="https://fission.codes/">Fission</a> are open protocols for synchronizing data between multiple devices. Both take the level of control and flexibility of something like email and bring it to your personal data. You could think of it as a USB key for your documents that you can plug into websites to work on your stuff.</p>
+<p>You can get a remoteStorage account for free from <a href="https://5apps.com/storage/">5apps</a> or <a href="https://remotestorage.io/servers">host your own</a>.</p>
+<p>You can get a Fission account for free from <a href="https://auth.fission.codes/">Fission Auth</a> or <a href="https://github.com/fission/fission">setup your own server</a>.</p>
+
+</div>
+
+<hr role="presentation" />
+
+<div class="KVCRootLink">
+
+<a class="OLSKRootLink OLSKCommonRootLink" href="en/index.html" title="Return to the homepage">
+	<img class="OLSKRootLinkImage" role="presentation" src="../static.rosano.ca/wikiavec/touch.png">
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+<!-- Mirrored from hyperdraft.rosano.ca/guide by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Jan 2025 00:53:52 GMT -->
+</html>

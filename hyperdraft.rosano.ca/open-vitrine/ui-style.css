@@ -1,0 +1,45 @@
+:root {
+	--OLSKCommonBackground: var(--KVCCommonBackground);
+	--OLSKCommonForeground: var(--KVCCommonForeground);
+}
+
+body {
+	background: var(--KVCCommonBackground);
+	color: var(--KVCCommonForeground);
+}
+
+.KVCVitrineVideo2 {
+	--OLSKCommonVideoWide: 750;
+	--OLSKCommonVideoHigh: 320;
+}
+
+.OLSKDecorGlossary {
+	margin: unset;
+}
+
+.OLSKDecorGlossary h2 {
+	margin-bottom: 6px;
+}
+
+.OLSKDecorGlossary ul {
+	padding: 0;
+
+	list-style: none;
+	font-weight: bold;
+}
+
+.OLSKDecorGlossary ul li {
+	margin: 10px 0;
+}
+
+.OLSKDecorGlossary a {
+	font-weight: normal;
+}
+
+.OLSKDecorGlossary dd {
+	margin: 1px 0 15px 0;
+}
+
+.ROCOGlossary {
+	margin-top: 10px;
+}

@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+static.rosano.ca	TRUE	/	FALSE	1999999999	connect.sid	s%3A1Gc3K6mlZ1YWYIztNd9c2gzljTkfQUKH.EqazFg5kl5nktzjqXodKNue3L8Ixzm4SfLLKywuj95Q
+static.rosano.ca	TRUE	/	FALSE	1999999999	SameSite	Strict
+

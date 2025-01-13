@@ -1,0 +1,17 @@
+:root {
+	--OLSKCommonBackground: var(--KVCCommonBackground);
+	--OLSKCommonForeground: var(--KVCCommonForeground);
+}
+
+body {
+	background: var(--KVCCommonBackground);
+	color: var(--KVCCommonForeground);
+}
+
+.KVCGuide table:first-of-type h1 {
+	border: none;
+}
+
+.KVCGuide table:not(:first-of-type) td:first-child {
+	width: 50%;
+}
