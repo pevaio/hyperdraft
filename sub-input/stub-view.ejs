@@ -1,0 +1,51 @@
+<%
+locals.OLSKPageAssets = [
+	'/_shared/__external/normalize.css/normalize.css',
+	'__compiled/ui-style.css',
+
+	'/_shared/__external/codemirror/lib/codemirror.css',
+	'/_shared/__external/codemirror/lib/codemirror.js',
+
+	'/_shared/__external/codemirror/mode/javascript/javascript.js',
+	'/_shared/__external/codemirror/mode/css/css.js',
+	
+	'/_shared/__external/codemirror/addon/edit/continuelist.js',
+
+	'/_shared/__external/codemirror/addon/mode/overlay.js',
+
+	'/_shared/__external/codemirror/mode/markdown/markdown.js',
+	'/_shared/__external/codemirror/mode/gfm/gfm.js',
+	
+	'/_shared/__external/codemirror/addon/search/search.js',
+	'/_shared/__external/codemirror/addon/search/searchcursor.js',
+	'/_shared/__external/codemirror/addon/search/jump-to-line.js',
+	'/_shared/__external/codemirror/addon/dialog/dialog.css',
+	'/_shared/__external/codemirror/addon/dialog/dialog.js',
+	'/_shared/__external/codemirror/keymap/sublime.js',
+];
+locals.OLSKPagePublicConstants = {
+	OLSKSharedPageCurrentLanguage,
+};
+%>
+
+<p>
+	<strong>KVCWriteInputDispatchHeaderTokens</strong>
+	<span id="TestKVCWriteInputDispatchHeaderTokens">0</span>
+	<span id="TestKVCWriteInputDispatchHeaderTokensData">undefined</span>
+</p>
+
+<p>
+	<strong>KVCWriteInputDispatchUpdate</strong>
+	<span id="TestKVCWriteInputDispatchUpdate">0</span>
+</p>
+
+<p>
+	<button id="TestKVCWriteInputFocus" onclick="window.KVCWriteInputBehaviour.InterfaceTestKVCWriteInputFocusButtonDidClick()">TestKVCWriteInputFocus</button>
+</p>
+
+<p>
+	<textarea id="TestKVCWriteInputPropData">undefined</textarea>
+	<button id="TestKVCWriteInputPropDataSend" onclick="window.KVCWriteInputBehaviour.InterfaceTestKVCWriteInputPropDataSendButtonDidClick()">TestKVCWriteInputPropDataSend</button>
+</p>
+
+<script src="/<%= OLSKSharedPageControllerSlug %>/__compiled/ui-behaviour.js"></script>

@@ -1,0 +1,23 @@
+KVCWriteTitle: Écrire
+KVCWriteFilterFieldText: Filtrer or créer
+KVCWriteCreateButtonText: Créer
+KVCWriteEmptyNoteText: Note blanche
+KVCWriteUntitledNoteText: Nota sans titre
+KVCWriteRevealArchiveButtonText: Montrer archive
+KVCWriteLauncherItemImportTXTText: Importer TXT (béta)
+KVCWriteLauncherItemImportNVText: Importer Notational Velocity (béta)
+KVCWriteLauncherItemExportZIPText: Exporter ZIP (béta)
+KVCWriteLauncherItemJournalText: Journal
+KVCWriteLauncherItemBacklinksText: Liens retours
+KVCWriteVersionsWord: versions
+KVCWriteLauncherItemShowPublicNotesText: Montrere les notes publiques
+KVCWriteLauncherItemPublishAllText: Publiquer toutes les notes antérieurement publiquées
+KVCWriteLauncherItemRetractAllText: Retracter toutes les notes publiquées
+KVCWriteLauncherItemConfigureCustomDomainText: Configurer nom de domaine personalisé
+KVCWriteLauncherItemConfigureCustomDomainPrompt1QuestionText: Veuillez copier le texte suivant et le coller dedans votre host configuration.
+KVCWriteLauncherItemConfigureCustomDomainPrompt2QuestionText: Quel est votre nom de domaine personalisé ?
+KVCWriteLauncherItemConfigureCustomDomainConfirmQuestionText: Le nom de domaine ne semble pas d'être présent. Souhaitez-vous essayer de nouveau ?
+KVCWriteLauncherItemRemoveCustomDomainText: Enlever nom de domaine personalisé
+KVCWriteLauncherItemConfigureCustomTemplateText: Configurer gabarit personalisé
+KVCWriteTemplateModalTitleText: Gabarit personalisé
+KVCWriteLauncherItemRemoveCustomTemplateText: Eliminer gabarit personalisé

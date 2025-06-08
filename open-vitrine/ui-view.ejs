@@ -1,0 +1,133 @@
+<%
+locals.OLSKPageTitle = OLSKLocalized('KVCVitrineTitle');
+locals.OLSKPageDescription = OLSKLocalized('KVCVitrineDescription');
+locals.OLSKPageManifest = OLSKCanonical('WKCManifestRoute');
+locals.OLSKPageAssets = [
+	'/_shared/__external/normalize.css/normalize.css',
+	'/_shared/__external/OLSKDecor/ui-style.css',
+	'/_shared/common/ui-style.css',
+	'ui-style.css',
+];
+%>
+
+<div class="KVCVitrine OLSKDecor OLSKDecorCapped OLSKDecorNoTopPad">
+
+<%- include('../../node_modules/OLSKCrown/main.ejs', {
+	OLSKCrownCardImageURL: '/_shared/KVCRootLink/ui-assets/identity.svg',
+	OLSKCrownCardNameText: OLSKLocalized('KVCVitrineTitle'),
+}) %>
+
+<%- include('../../node_modules/OLSKLanding/main.ejs', {
+	OLSKLandingHeadingText: OLSKLocalized('KVCVitrineDescription'),
+	OLSKLandingBlurbText: OLSKLocalized('OLSKLandingBlurbText'),
+	OLSKLandingActionText: OLSKLocalized('OLSKWordingOpenApp'),
+	OLSKLandingActionHref: OLSKCanonicalLocalized('KVCWriteRoute'),
+}) %>
+
+<h1 class="KVCVitrineFeaturesHeading"><%= OLSKLocalized('OLSKWordingFeatures') %></h1>
+
+<%- include('./submodules/KVCFeatureList/main.ejs') %>
+
+<%- include('../../node_modules/OLSKAppFeatureList/main.ejs', {
+	OLSKAppFeatureListRepoURL: process.env.OLSK_REPO_URL,
+}).replace(/node_modules/g, '_shared/__external') %>
+
+<a class="KVCVitrineGuideButton OLSKDecorPress OLSKDecorPressCall" href="<%= OLSKCanonical('KVCGuideRoute') %>"><%= OLSKLocalized('OLSKWordingOpenGuide') %></a>
+
+<h1 class="KVCVitrineDeeperHeading"><%= OLSKLocalized('OLSKWordingDeeperHeading') %></h1>
+
+<div class="OLSKCommonVideoList">
+	<p class="OLSKCommonVideoListItem OLSKCommonVideoListItemSquare">
+		<iframe src="https://www.youtube-nocookie.com/embed/vh3a9yYyYfU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</p>
+</div>
+
+<dl class="KVCVitrineGlossary OLSKDecorGlossary">
+	<h2 class="KVCVitrineGlossaryWritingHeading"><%= OLSKLocalized('KVCVitrineGlossaryWritingHeadingText') %></h2>
+	
+	<ul>
+		<li>
+			<a class="KVCVitrineGlossaryWritingUsingLink" href="<%= process.env.KVC_VITRINE_GLOSSARY_WRITING_USING_URL %>"><%= OLSKLocalized('KVCVitrineGlossaryWritingUsingLinkText') %></a>
+		</li>
+		<li>
+			<a class="KVCVitrineGlossaryWritingAnswerLink" href="<%= process.env.KVC_VITRINE_GLOSSARY_WRITING_ANSWER_URL %>"><%= OLSKLocalized('KVCVitrineGlossaryWritingAnswerLinkText') %></a>
+		</li>
+		<li>
+			<a class="KVCVitrineGlossaryWritingListsLink" href="<%= process.env.KVC_VITRINE_GLOSSARY_WRITING_LISTS_URL %>"><%= OLSKLocalized('KVCVitrineGlossaryWritingListsLinkText') %></a>
+		</li>
+		<li>
+			<a class="KVCVitrineGlossaryWritingDiscussionLink" href="<%= process.env.KVC_VITRINE_GLOSSARY_WRITING_DISCUSSION_URL %>"><%= OLSKLocalized('KVCVitrineGlossaryWritingDiscussionLinkText') %></a>
+		</li>
+		<li>
+			<a class="KVCVitrineGlossaryWritingMagicLink" href="<%= process.env.KVC_VITRINE_GLOSSARY_WRITING_MAGIC_URL %>"><%= OLSKLocalized('KVCVitrineGlossaryWritingMagicLinkText') %></a>
+		</li>
+	</ul>
+
+	<h2 class="KVCVitrineGlossaryPublicHeading"><%= OLSKLocalized('KVCVitrineGlossaryPublicHeadingText') %></h2>
+
+	<dt><a class="KVCVitrineGlossaryPublicRefLink" href="<%= process.env.KVC_VITRINE_GLOSSARY_PUBLIC_REF_URL %>"><%= OLSKLocalized('KVCVitrineGlossaryPublicRefLinkText') %></a></dt>
+	<dd class="KVCVitrineGlossaryPublicRefBlurb"><%= OLSKLocalized('KVCVitrineGlossaryPublicRefBlurbText') %></dd>
+	
+	<dt><a class="KVCVitrineGlossaryPublicGardensLink" href="<%= process.env.KVC_VITRINE_GLOSSARY_PUBLIC_GARDENS_URL %>"><%= OLSKLocalized('KVCVitrineGlossaryPublicGardensLinkText') %></a></dt>
+	<dd class="KVCVitrineGlossaryPublicGardensBlurb"><%= OLSKLocalized('KVCVitrineGlossaryPublicGardensBlurbText') %></dd>
+
+	<dt><a class="KVCVitrineGlossaryPublicDigitalLink" href="<%= process.env.KVC_VITRINE_GLOSSARY_PUBLIC_DIGITAL_URL %>"><%= OLSKLocalized('KVCVitrineGlossaryPublicDigitalLinkText') %></a></dt>
+	<dd class="KVCVitrineGlossaryPublicDigitalBlurb"><%= OLSKLocalized('KVCVitrineGlossaryPublicDigitalBlurbText') %></dd>
+
+	<h2 class="KVCVitrineGlossaryCompareHeading"><%= OLSKLocalized('KVCVitrineGlossaryCompareHeadingText') %></h2>
+	
+	<ul>
+		<li>
+			<a class="KVCVitrineGlossaryCompareSimplenoteLink" href="<%= OLSKCanonical('KVCCompareSimplenoteRoute') %>"><%= OLSKLocalized('KVCVitrineGlossaryCompareSimplenoteLinkText') %></a>
+		</li>
+	</ul>
+	
+	<%- include('../../node_modules/ROCOGlossary/main.ejs', {
+		ROCOGlossaryHeadingEnabled: true
+	}) %>
+</dl>
+
+<h1 class="KVCVitrineVideoHeading"><%= OLSKLocalized('OLSKWordingVideo') %></h1>
+
+<div class="OLSKCommonVideoList">
+	<p class="KVCVitrineVideo1 OLSKCommonVideoListItem OLSKCommonVideoListItemMobile">
+		<iframe src="<%= process.env.KVC_VITRINE_VIDEO_URL_1 %>" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</p>
+
+	<p class="KVCVitrineVideo2 OLSKCommonVideoListItem">
+		<iframe src="<%= process.env.KVC_VITRINE_VIDEO_URL_2 %>" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</p>
+</div>
+
+<%- include('../../node_modules/ROCOGazette/main.ejs', {
+	_OLSKModulesDirPrefix: '../.',
+	ROCOBulletinProject: 'Hyperdraft',
+}) %>
+
+<!-- OSFeedbox -->
+<script src="https://olsk.rosano.ca/OSFeedbox/master/main.js"></script>
+<div class="parent-OSFeedbox"></div>
+<script type="text/javascript">
+OSFeedbox.load({
+	parent: document.querySelector('.parent-OSFeedbox'),
+	feed: '<%= process.env.ROCO_FEED_URL %>',
+	limit: 5,
+});
+</script>
+
+<%- include('../../node_modules/OLSKEdit/main.ejs', {
+	OLSKEditURL: process.env.OLSK_REPO_URL,
+}) %>
+
+<h1 class="KVCVitrineSupportHeading"><%= OLSKLocalized('OLSKWordingFeedbackHeading') %></h1>
+<p class="KVCVitrineSupportBlurb"><%= OLSKLocalized('OLSKWordingFeedbackBlurb') %></p>
+
+<hr role="presentation" />
+
+<%- include('../../node_modules/SWARLink/main.ejs') %>
+
+<hr role="presentation" />
+
+<%- include('../_shared/__external/ROCORootLink/main.ejs') %>
+
+</div>

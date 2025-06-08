@@ -1,0 +1,37 @@
+{
+  "scripts": {
+    "postinstall": "olsk-bundle tidy && node ./package-postinstall.js",
+    
+    "setup": "npm install --no-save && olsk-bundle",
+
+    "start": "olsk-express",
+    
+    "test": "olsk-spec",
+
+    "build": "olsk-rollup",
+    "watch": "olsk-rollup-watch"
+  },
+  "dependencies": {
+    "OLSKPithVitrine": "olsk/OLSKPithVitrine",
+
+    "OLSKPithGuide": "olsk/OLSKPithGuide",
+
+    "OLSKPithApp": "olsk/OLSKPithApp",
+    "OLSKCatalog": "olsk/OLSKCatalog",
+    "marked": "5.x",
+    "escape-string-regexp": "4.x",
+    "OLSKVersion": "olsk/OLSKVersion",
+    "OLSKLocalStorage": "olsk/OLSKLocalStorage",
+    "jszip": "latest",
+
+    "codemirror": "rosano/CodeMirror#add-distribution",
+
+    "OLSKRobots": "olsk/OLSKRobots",
+
+    "OLSKServiceWorker": "olsk/OLSKServiceWorker"
+  },
+  "devDependencies": {
+    "OLSKPithToolchain": "olsk/OLSKPithToolchain",
+    "OLSKRollupScaffold": "olsk/OLSKRollupScaffold"
+  }
+}

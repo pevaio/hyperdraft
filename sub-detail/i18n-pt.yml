@@ -1,0 +1,15 @@
+KVCWriteDetailToolbarBackButtonText: Voltar
+KVCWriteDetailToolbarJumpButtonText: Saltar
+KVCWriteDetailToolbarArchiveButtonText: Arquivar
+KVCWriteDetailToolbarUnarchiveButtonText: Desarquivar
+KVCWriteDetailToolbarIsRootPageText: (página inicial)
+KVCWriteDetailToolbarPublishButtonText: Publicar
+KVCWriteDetailToolbarPublicLinkText: Público
+KVCWriteDetailToolbarRetractButtonText: Retirar
+KVCWriteDetailToolbarDiscardButtonText: Descartar
+KVCWriteDetailLauncherItemShowLocalVersionsText: Mostrar versões locais
+KVCWriteDetailLauncherItemCloneText: Clonar
+KVCWriteDetailLauncherItemExportText: Exportar nota
+KVCWriteDetailLauncherItemDebugText: Debug nota
+KVCWriteDetailLauncherItemOpenPublicLinkText: Abrir link público
+KVCWriteDetailLauncherItemSetAsRootPageText: Definir como página inicial
