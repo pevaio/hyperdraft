@@ -4,7 +4,7 @@
     
     "setup": "npm install --no-save && olsk-bundle",
 
-    "start": "olsk-express",
+    "start": "node server.js",
     
     "test": "olsk-spec",
 
