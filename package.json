@@ -13,7 +13,7 @@
   },
   "dependencies": {
 
-    "OLSKString": "latest",
+    "OLSKString": "olsk/OLSKString",
     
     "OLSKPithVitrine": "olsk/OLSKPithVitrine",
 
