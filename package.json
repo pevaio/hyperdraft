@@ -12,6 +12,9 @@
     "watch": "olsk-rollup-watch"
   },
   "dependencies": {
+
+    "OLSKString": "latest"
+    
     "OLSKPithVitrine": "olsk/OLSKPithVitrine",
 
     "OLSKPithGuide": "olsk/OLSKPithGuide",
